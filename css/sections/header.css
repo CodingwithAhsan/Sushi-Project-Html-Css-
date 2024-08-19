@@ -1,0 +1,118 @@
+.header__nav {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .header__logo {
+    flex: 1;
+    display: flex;
+  
+    position: relative;
+    padding: 20px;
+  }
+  
+  .header__logo-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+  
+    background-color: var(--primary-color);
+    z-index: -1;
+  }
+  
+  .header__logo h4 {
+    padding-left: 30px;
+  
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--playfair-display);
+    color: #fff;
+    opacity: 0.8;
+  }
+  
+  .header__menu, .header__menu-mobile {
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+  
+    list-style: none;
+  }
+  
+  .header__menu li {
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .header__menu li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  
+  .header__menu-mobile {
+    display: none;
+    gap: 20px;
+  
+    position: relative;
+  }
+
+  /* for responsivness */
+
+  .responsive-modebar{
+    width: 80%;
+    z-index: 33;
+    height: 100vh;
+    right: -90%;
+    display: flex;
+    font-size: 3rem;
+    font-family: var(--plus-jakarta-sans);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    backdrop-filter: blur(12px);
+  }
+  ul{
+    color: #fff;
+    gap: 4rem;
+    display: flex;
+    text-transform: uppercase;
+    
+  }
+  ul li{
+    /* color: var(--secondary-color); */
+    list-style: none;
+    
+  }
+
+  .header-small{
+    flex-direction: column;
+    display: flex;
+  }
+
+  .icon-crose{
+    z-index: 99;
+    width: 35px;
+    height: 35px;              /* Ensure height is same as width to maintain a circle */
+    background-color: white;  /* Background color for the circle */
+    border-radius: 50%;       /* Makes the element a circle */
+    padding: 8px;             /* Adds padding inside the circle */
+    box-sizing: border-box;   /* Ensures padding is included in the element's total width and height */
+
+    top: 2%;
+    right: 10%;
+    position: absolute;
+
+    display: flex;            /* Center the content inside the circle */
+    align-items: center;      /* Center vertically */
+    justify-content: center;  /* Center horizontally */
+  }
+
